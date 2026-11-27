@@ -1,0 +1,39 @@
+name: 🐛 Laporan Bug (Testing)
+description: Laporkan bug atau ketidaksesuaian hasil testing database, hosting, atau fitur MVP.
+title: "[BUG] Deskripsi Singkat Bug"
+labels: ["bug", "testing"]
+body:
+  - type: dropdown
+    id: module
+    attributes:
+      label: Modul / Area Terdampak
+      options:
+        - Tim B - Pengingat Tugas & Kuliah / Cron
+        - Tim C - Kalender & Jadwal
+        - Tim D - Materi PDF (CRD)
+        - Database (Neon PostgreSQL / Schema)
+        - Hosting / Vercel / CI
+        - UI/UX & Tampilan
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah Reproduksi (Steps to Reproduce)
+      placeholder: |
+        1. Buka halaman ...
+        2. Input data ...
+        3. Klik tombol ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Hasil yang Diharapkan vs Hasil Aktual
+      placeholder: |
+        - Diharapkan: ...
+        - Aktual: ...
+    validations:
+      required: true
