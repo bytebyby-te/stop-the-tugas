@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📌 Papan Tugas & Roadmap (GitHub Projects)
+    url: https://github.com/constellation-a2/stop-the-tugas/projects
+    about: Cek status progres, jadwal H1-H7, dan rotasi anggota di GitHub Projects.

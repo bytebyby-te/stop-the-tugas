@@ -1,0 +1,25 @@
+# Default / Architecture & Main Release Governance
+*                                   @istikmal
+CONTRIBUTING.md                     @istikmal @evanbaswara
+.github/CODEOWNERS                  @istikmal @evanbaswara
+
+# Team B — Reminders & Web Push
+/app/routes/reminder.py             @Athina96r
+/tests/unit/test_wib_reminders.py   @Athina96r
+/tests/integration/test_reminder_cron.py @Athina96r
+
+# Team C — Calendar & Schedules
+/app/routes/calendar.py             @muhalf31
+/tests/unit/test_calendar_rules.py  @muhalf31
+/tests/integration/test_agenda_routes.py @muhalf31
+
+# Team D — Materials & Notes Repository
+/app/routes/materials.py            @nawal-io
+/tests/unit/test_pdf_validation.py  @nawal-io
+/tests/integration/test_materials_routes.py @nawal-io
+
+# Database, UI/UX, & Algorithms
+/database/                          @istikmal @evanbaswara
+/migrations/                        @istikmal @evanbaswara
+/design/                            @istikmal @evanbaswara
+/docs/                              @istikmal @evanbaswara

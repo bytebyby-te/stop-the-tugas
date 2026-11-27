@@ -1,0 +1,54 @@
+name: 📋 Tugas Timeline / Fitur MVP
+description: Buat tiket tugas atau sub-tugas modul.
+title: "Judul Singkat Tugas — Target Output"
+labels: ["planning"]
+body:
+  - type: dropdown
+    id: team
+    attributes:
+      label: Tim / Workstream PIC
+      options:
+        - Tech Lead (Istikmal)
+        - Project Manager (Evan)
+        - DevOps (Fasya, Hanif)
+        - Tim A - Database Engineer (Alam, Bintang)
+        - Tim A - UI/UX (Moses, Qiara, Fadhil)
+        - Tim A - Flowchart & Algoritma (Cinta, Khuril)
+        - Tim B - Pengingat & Web Push (Athina, Zayn, Aidan, Carla, Rafif)
+        - Tim C - Kalender & Jadwal WIB (Fahri, Sulhan, Anin, Ghina)
+        - Tim D - Materi PDF CRD (Nawal, Nayaka, Nabil, Yessa)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: schedule
+    attributes:
+      label: Jadwal Hari (H1 - H7)
+      options:
+        - H1 (Rabu, 25 Nov 2026)
+        - H2 (Kamis, 26 Nov 2026)
+        - H3 (Jumat, 27 Nov 2026)
+        - H4 (Sabtu, 28 Nov 2026)
+        - H5 (Minggu, 29 Nov 2026)
+        - H6 (Senin, 30 Nov 2026)
+        - H7 (Selasa, 1 Des 2026)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Tugas & Target Output
+      description: Jelaskan detail pekerjaan dan output file/fitur yang diharapkan.
+      placeholder: |
+        - Output: file Python / SQL / ERD / Wireframe sesuai spesifikasi.
+        - Ketergantungan (jika ada): menunggu #nomor-issue.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: mvp_guardrails
+    attributes:
+      label: Checklist Aturan MVP
+      options:
+        - label: Perubahan backend/logika menyertakan unit/integration test (pytest)
